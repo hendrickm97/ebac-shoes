@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-flex {
+  display: flex;
+}
+
+header .container {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+header {
+  padding: 16px 0;
+  background-color: #1a44ce;
+  color: white;
+}
+
+header nav li {
+  display: inline;
+  margin-left: 16px;
+  font-size: 18px;
+}
+
+header nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+section .container {
+  align-items: flex-start;
+  display: flex;
+}
+
+section {
+  padding: 24px 0;
+}
+
+section h2 {
+  margin-bottom: 16px;
+  color: #4f77fa;
+  padding-bottom: 10px;
+  font-style: italic;
+  border-bottom: 1px solid #4f77fa;
+}
+
+section p {
+  margin-bottom: 8px;
+}
+
+.loja-img {
+  margin-right: 32px;
+  max-width: 350px;
+  max-height: 350px;
+  width: auto;
+  height: auto;
+}
+
+.lista-tenis {
+  flex-wrap: wrap;
+}
+
+.lista-tenis li {
+  list-style: none;
+  max-width: 25%;
+  padding: 16px 4px;
+}
+
+.lista-tenis li img {
+  max-width: 100%;
+}
+
+.lista-tenis h3 {
+  margin: 16px 0;
+}
+
+.lista-tenis li button {
+  background-color: #1a44ce;
+  color: white;
+  font-size: 20px;
+  padding: 4px 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.lista-tenis li p {
+  font-size: 0.75rem;
+}
+
+.footer {
+  margin: 0 auto;
+  padding: 8px 0;
+  background-color: #1a44ce;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  header .container {
+    justify-content: space-between;
+    align-items: center;
+  }
+  section .container {
+    display: block;
+  }
+
+  .loja-img {
+    max-width: 100%;
+    margin-bottom: 16px;
+  }
+  .lista-tenis li {
+    list-style: none;
+    max-width: 50%;
+    padding: 16px 4px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  section .container {
+    display: block;
+  }
+  .lista-tenis li {
+    list-style: none;
+    max-width: 40%;
+    padding: 16px 4px;
+    margin: 0 auto;
+  }
+  .loja-img {
+    max-width: 100%;
+    margin-bottom: 16px;
+  }
+  .lista-tenis li {
+    list-style: none;
+    max-width: 100%;
+    padding: 16px 4px;
+    margin: 0 auto;
+  }
+}
